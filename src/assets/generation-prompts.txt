@@ -1,0 +1,24 @@
+Mode: built-in image_gen
+
+ASSET 1 — cybereng-tropical-hero.webp
+Use case: photorealistic-natural
+Asset type: premium marketing agency website hero photograph, landscape 2048x1152.
+Primary request: a conceptual Dominican tropical river landscape inspired by Bayaguana, Dominican Republic, with creative production equipment in the foreground.
+Scene/backdrop: believable lush green Dominican tropical mountains, a clear turquoise river with a modest small waterfall in the middle background, native palms framing both sides.
+Subject: on a rough rock in the foreground right, an open silver laptop with a simple unbranded dark teal abstract screen, and a black mirrorless camera beside it. A small accurate Dominican Republic flag on a slender pole subtly present by the rock: white cross, blue upper-left and lower-right, red upper-right and lower-left, tiny central coat of arms. The flag is a secondary detail.
+Style/medium: premium photorealistic cinematic editorial photograph with natural realistic textures, restrained color grading, no visual effects.
+Composition/framing: wide landscape; main objects on right two-thirds, foliage/sky and atmospheric landscape at left providing usable crop space. Objects grounded naturally on the rock, plausible size, realistic lenses and perspective.
+Lighting/mood: soft natural daylight, inviting and calm.
+Constraints: no words, no typography, no logos, no interface chrome, no watermarks, no people, no fantasy terrain, no oversized waterfall. Conceptual scene, not a documentary claim of an exact real location.
+
+ASSET 2 — cybereng-bayaguana-waterfall.webp
+Use case: photorealistic-natural
+Asset type: wide panoramic 3:1 landscape banner photograph, 3072x1024.
+Primary request: an inspiring conceptual Dominican countryside river and modest cascading waterfall in lush jungle near Bayaguana / Monte Plata, visually inspired by Salto Alto without claiming an exact location.
+Scene/backdrop: believable gently rolling Dominican terrain, dense natural jungle, elegant palms, clear turquoise pool and river, a small broad cascade at center-right.
+Style/medium: high-end photorealistic landscape photography with crisp natural detail, realistic foliage, subtle atmospheric depth and restrained editorial finish.
+Composition/framing: panoramic 3:1 banner, darker foliage and water toward lower-left, beautiful small waterfall at center-right, layered distant greenery.
+Lighting/mood: warm golden highlights illuminating emerald leaves and turquoise water, calm premium inspiring atmosphere.
+Color palette: rich emerald and turquoise with warm natural highlights.
+Constraints: no text, no logos, no watermarks, no buildings, no people, no equipment, no fantasy terrain, no enormous waterfall. A conceptual landscape inspired by the region.
+

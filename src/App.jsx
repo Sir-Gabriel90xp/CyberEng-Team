@@ -50,7 +50,7 @@ export default function App() {
       </a>
       <Header />
       <main id="main-content">
-        <Hero />
+        <Hero notify={notify} />
         <Services selectService={setService} />
         <About />
         <Portfolio />

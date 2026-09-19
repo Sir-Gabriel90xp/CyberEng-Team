@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from "../components/Icon.jsx";
-export default function Hero() {
+import { socials, hasWhatsApp, whatsappUrl } from "../data/config.js";
+export default function Hero({ notify }) {
   return (
     <>
       <section id="inicio" className="hero" aria-labelledby="hero-title">
@@ -67,6 +68,44 @@ export default function Hero() {
                   <strong>más oportunidades</strong>
                 </small>
               </span>
+            </div>
+            <div className="hero-social">
+              <span className="hero-social-label">CONECTEMOS</span>
+              <div className="social-links" aria-label="Redes sociales">
+                {socials.map((s) =>
+                  /^https:\/\//.test(s.url) ? (
+                    <a
+                      key={s.name}
+                      href={s.url}
+                      aria-label={s.name}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon name={s.icon} size={20} />
+                    </a>
+                  ) : (
+                    <button
+                      key={s.name}
+                      aria-label={`${s.name}, próximamente`}
+                      onClick={() =>
+                        notify(
+                          `Nuestro perfil de ${s.name} estará disponible pronto.`,
+                        )
+                      }
+                    >
+                      <Icon name={s.icon} size={20} />
+                    </button>
+                  ),
+                )}
+                <a
+                  href={whatsappUrl()}
+                  target={hasWhatsApp ? "_blank" : undefined}
+                  rel={hasWhatsApp ? "noopener noreferrer" : undefined}
+                  aria-label={hasWhatsApp ? "WhatsApp" : "Ir a contacto"}
+                >
+                  <Icon name="whatsapp" size={20} />
+                </a>
+              </div>
             </div>
           </div>
           <div className="hero-note">

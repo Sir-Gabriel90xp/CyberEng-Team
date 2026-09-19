@@ -3,9 +3,6 @@ import Brand from "./Brand.jsx";
 import Icon from "./Icon.jsx";
 import {
   navigation,
-  socials,
-  hasWhatsApp,
-  whatsappUrl,
 } from "../data/config.js";
 export default function Footer({ notify }) {
   return (
@@ -43,47 +40,6 @@ export default function Footer({ notify }) {
                 </a>
               ))}
           </nav>
-        </div>
-        <div className="footer-social">
-          <span className="footer-label">CONECTEMOS</span>
-          <div className="social-links">
-            {socials.map((s) =>
-              /^https:\/\//.test(s.url) ? (
-                <a
-                  key={s.name}
-                  href={s.url}
-                  aria-label={s.name}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Icon name={s.icon} size={20} />
-                </a>
-              ) : (
-                <button
-                  key={s.name}
-                  aria-label={`${s.name}, próximamente`}
-                  onClick={() =>
-                    notify(
-                      `Nuestro perfil de ${s.name} estará disponible pronto.`,
-                    )
-                  }
-                >
-                  <Icon name={s.icon} size={20} />
-                </button>
-              ),
-            )}
-            <a
-              href={whatsappUrl()}
-              target={hasWhatsApp ? "_blank" : undefined}
-              rel={hasWhatsApp ? "noopener noreferrer" : undefined}
-              aria-label={hasWhatsApp ? "WhatsApp" : "Ir a contacto"}
-            >
-              <Icon name="whatsapp" size={20} />
-            </a>
-          </div>
-          <a className="text-link footer-contact" href="#contacto">
-            Hablemos de tu proyecto <Icon name="arrow" size={18} />
-          </a>
         </div>
       </div>
       <div className="container footer-bottom">

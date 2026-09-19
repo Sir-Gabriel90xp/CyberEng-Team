@@ -439,6 +439,33 @@ p {
   font-weight: 700;
   color: var(--ink);
 }
+.hero-social {
+  margin-top: 27px;
+}
+.hero-social-label {
+  display: block;
+  margin-bottom: 11px;
+  color: #4e6870;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+.hero-social .social-links {
+  gap: 10px;
+}
+.hero-social .social-links > a,
+.hero-social .social-links > button {
+  width: 39px;
+  height: 39px;
+  border-color: #86a9ad;
+  background: #ffffffb8;
+  color: var(--ink);
+}
+.hero-social .social-links > a:hover,
+.hero-social .social-links > button:hover {
+  background: #d9eee8;
+  border-color: var(--green);
+}
 .hero-note {
   position: absolute;
   right: 1%;
@@ -1359,7 +1386,7 @@ body:has(dialog[open]) {
 }
 .footer-top {
   display: grid;
-  grid-template-columns: 1.1fr 1fr 0.6fr 1.1fr;
+  grid-template-columns: 1.1fr 1fr 0.6fr;
   gap: 50px;
   padding-bottom: 60px;
 }
@@ -1390,6 +1417,9 @@ body:has(dialog[open]) {
   color: #c2d3d5;
   margin-bottom: 22px;
 }
+.footer-social {
+  transform: translateY(-14px);
+}
 .footer-location p {
   font-size: 0.875rem;
   color: #c1d2d4;
@@ -1416,15 +1446,17 @@ body:has(dialog[open]) {
   place-items: center;
   width: 33px;
   height: 35px;
-  border: 1px solid #68838b66;
+  border: 1px solid #8eb5bd99;
   border-radius: 7px;
-  background: transparent;
+  background: #173e49;
   color: white;
-  transition: background 0.2s;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
 }
 .social-links > a:hover,
 .social-links > button:hover {
   background: #294e58;
+  border-color: #c2e6e6;
+  transform: translateY(-2px);
 }
 .footer-contact {
   color: var(--lime);
@@ -2157,6 +2189,7 @@ body:has(dialog[open]) {
   }
   .footer-social {
     grid-column: 1 / -1;
+    transform: translateY(-8px);
   }
   .social-links {
     gap: 12px;
